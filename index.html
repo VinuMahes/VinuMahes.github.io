@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinuyan Maheswaran - Ingenieursportfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">👨‍💼</div>
+      <span>Vinuyan Maheswaran</span>
+    </div>
+    <nav>
+      <a href="#uber">Über mich</a>
+      <a href="#erfahrung">Erfahrung</a>
+      <a href="#skills">Skills</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section mit Bild -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Willkommen zu meinem Portfolio</p>
+          <h1>Vinuyan Maheswaran</h1>
+          <p class="hero-subtitle">Ingenieur für Gesundheits- und Medizintechnologien</p>
+          <p>Bachelor mit Schwerpunkt Qualitätsmanagement | Angehender Master in Technischer Produktion</p>
+          <div class="hero-actions">
+            <a href="#erfahrung" class="button primary">Meine Erfahrung</a>
+            <a href="#kontakt" class="button secondary">Kontaktieren</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="profile.png" alt="Vinuyan Maheswaran Profilbild" class="profile-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Über mich -->
+    <section id="uber" class="info-block">
+      <div>
+        <p class="eyebrow">Über mich</p>
+        <h2>Leidenschaft für Qualität und Innovation</h2>
+        <p>Ich bin ein hochmotivierter Ingenieur mit umfassender Erfahrung in Qualitätsmanagement, technischer Produktion und Medizintechnologie. Mit praktischer Erfahrung bei renommierten Unternehmen wie B.Braun und Ulrich Medical bringe ich eine Mischung aus akademischem Wissen und realer praktischer Erfahrung mit.</p>
+        <p>Meine Leidenschaft liegt in der Lösung komplexer technischer Herausforderungen, der Optimierung von Prozessen und der Sicherstellung höchster Qualitätsstandards in der Medizintechnik. Ich bin flexibel, teamfähig und bringe interkulturelle Kompetenzen aus meinem internationalen Hintergrund mit.</p>
+      </div>
+      <div class="info-visual">👨‍🎓</div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="feature-grid">
+      <article>
+        <h3>🎯 Qualitätsmanagement</h3>
+        <p>Erfahrung mit MDR, ISO 13485 und SAP-Systemen in der Medizintechnik</p>
+      </article>
+      <article>
+        <h3>🛠️ Technische Fähigkeiten</h3>
+        <p>CAD, Arduino, LTspice, Power Automate und spezialisierte Engineering-Tools</p>
+      </article>
+      <article>
+        <h3>🌍 Internationale Erfahrung</h3>
+        <p>COIL Project 2024 und interkulturelle Zusammenarbeit mit Teams weltweit</p>
+      </article>
+    </section>
+
+    <!-- Erfahrung & Bildung - Mit Akkordeon -->
+    <section id="erfahrung" class="experience-section">
+      <p class="eyebrow">Mein professioneller Weg</p>
+      <h2>Bildung & Berufserfahrung</h2>
+
+      <!-- Bildung -->
+      <div class="experience-block">
+        <h3>📚 Ausbildung</h3>
+        
+        <div class="accordion-item">
+          <button class="accordion-button" onclick="toggleAccordion(this)">
+            <span class="accordion-title">Bachelor in Gesundheits- und Medizintechnologien</span>
+            <span class="accordion-period">01/2021 - 03/2026</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Hochschule:</strong> Hochschule Ruhr West, Mülheim an der Ruhr</p>
+              <p><strong>Fokus & Kernkompetenzen:</strong></p>
+              <ul>
+                <li>Medizintechnische Systeme und Geräteentwicklung</li>
+                <li>Qualitätssicherung und Qualitätsmanagementsysteme</li>
+                <li>Regulatorische Anforderungen (MDR 2017/745, ISO 13485)</li>
+                <li>Elektronik und Mikrocontroller-Programmierung (Arduino)</li>
+                <li>CAD-Modellierung und technische Zeichnungen</li>
+                <li>Signalverarbeitung und Messtechnik</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" onclick="toggleAccordion(this)">
+            <span class="accordion-title">Master in Technische Produktion</span>
+            <span class="accordion-period">04/2026 - 03/2028 (geplant)</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Hochschule:</strong> Hochschule Ruhr West</p>
+              <p><strong>Fokus:</strong> Vertiefung in Produktionstechnologie, Prozessoptimierung und industriellem Management mit Anwendung auf reale Produktionsszenarien.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berufserfahrung -->
+      <div class="experience-block">
+        <h3>💼 Berufserfahrung & Projekte</h3>
+
+        <div class="accordion-item expanded">
+          <button class="accordion-button expanded" onclick="toggleAccordion(this)">
+            <span class="accordion-title">Praxissemester: Qualitätsmanagement</span>
+            <span class="accordion-period">09/2024 - 03/2025 (6 Monate)</span>
+            <span class="accordion-icon">−</span>
+          </button>
+          <div class="accordion-content" style="display: block;">
+            <div class="accordion-body">
+              <p><strong>Unternehmen:</strong> B.Braun - Aesculap AG, Tuttlingen (Deutschland)</p>
+              <p><strong>Abteilung:</strong> Qualitätsmanagement & Regulatory Affairs</p>
+              
+              <p><strong>🎯 Aufgaben & Verantwortungen:</strong></p>
+              <ul>
+                <li><strong>Regulatorische Compliance:</strong> Anwendung und Sicherstellung der Einhaltung von MDR 2017/745 und ISO 13485 Standards für medizinische Produkte</li>
+                <li><strong>Dokumentationssysteme:</strong> Erstellung, Verwaltung und Aktualisierung von qualitätsbezogenen Dokumentationen und Standard Operating Procedures (SOPs)</li>
+                <li><strong>Prozessoptimierung:</strong> Analyse und Optimierung von Qualitätskontrollprozessen in der Produktion</li>
+                <li><strong>SAP-Datenverwaltung:</strong> Dateneingabe und Datenmanagement in SAP-Systemen (DED/DEA Module) für Qualitätskontrollen</li>
+                <li><strong>Qualitätsaudits:</strong> Durchführung von internen Audits und Inspektionen zur Sicherstellung von Qualitätsstandards</li>
+                <li><strong>Interdisziplinäre Zusammenarbeit:</strong> Enge Zusammenarbeit mit Produktion, Engineering und Regulatory Affairs Abteilungen</li>
+                <li><strong>Fehlerkontrolle:</strong> Verwaltung und Analyse von Qualitätsmängeln und Implementierung von Korrekturmaßnahmen</li>
+              </ul>
+
+              <p><strong>💡 Erreichte Lösungen & Ergebnisse:</strong></p>
+              <ul>
+                <li><strong>Dokumentationssystem optimiert:</strong> Entwicklung eines strukturierten Dokumentationssystems mit verbesserter Nachverfolgbarkeit zur Sicherstellung der Compliance mit MDR- und ISO-Standards</li>
+                <li><strong>Prozesseffizienz erhöht:</strong> Reduzierung von Qualitätskontrollfehlern um ~15% durch systematische Prozessoptimierungen und verbesserte Checklisten</li>
+                <li><strong>Automation implementiert:</strong> Einsatz von Power Automate zur Automatisierung von Routineaufgaben und Datenerfassungsprozessen (Zeitersparnis: ~5 Stunden pro Woche)</li>
+                <li><strong>Datenintegrität verbessert:</strong> Standardisierung von SAP-Dateneinträgen und Validierungsprozessen zur Reduktion von Eingabefehlern</li>
+                <li><strong>Team-Unterstützung:</strong> Schulung von Mitarbeitern bezüglich neuer Dokumentationssysteme und Best Practices</li>
+              </ul>
+
+              <p><strong>🔧 Verwendete Technologien & Tools:</strong></p>
+              <ul>
+                <li>SAP (DED/DEA Modules)</li>
+                <li>Power Automate (Workflow Automation)</li>
+                <li>Microsoft Office Suite (Excel, Word, PowerPoint)</li>
+                <li>Qualitätsmanagementsoftware</li>
+                <li>Adobe Acrobat (für Dokumentation)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item expanded">
+          <button class="accordion-button expanded" onclick="toggleAccordion(this)">
+            <span class="accordion-title">Bachelorarbeit: Qualitätssicherung medizinischer Geräte</span>
+            <span class="accordion-period">09/2025 - 02/2026 (6 Monate)</span>
+            <span class="accordion-icon">−</span>
+          </button>
+          <div class="accordion-content" style="display: block;">
+            <div class="accordion-body">
+              <p><strong>Unternehmen:</strong> Ulrich Medical, Ulm (Deutschland)</p>
+              <p><strong>Thema:</strong> Entwicklung und Validierung von Qualitätssicherungsmaßnahmen für medizinische Geräte</p>
+
+              <p><strong>🎯 Aufgaben & Verantwortungen:</strong></p>
+              <ul>
+                <li><strong>Prüfprotokoll-Entwicklung:</strong> Erstellung und Validierung standardisierter Prüfmethoden und -protokolle für medizinische Geräte</li>
+                <li><strong>Technische Tests:</strong> Durchführung umfassender technischer Tests und Messungen zur Überprüfung der Produktzuverlässigkeit</li>
+                <li><strong>Dokumentation:</strong> Detaillierte Berichterstellung und technische Dokumentation aller Testergebnisse und Abweichungen</li>
+                <li><strong>Produktentwicklung:</strong> Zusammenarbeit mit dem Produktentwicklungsteam zur kontinuierlichen Verbesserung</li>
+                <li><strong>Normeneinhaltung:</strong> Sicherstellung der Konformität mit relevanten medizintechnischen Normen und Richtlinien</li>
+              </ul>
+
+              <p><strong>💡 Erreichte Lösungen & Ergebnisse:</strong></p>
+              <ul>
+                <li><strong>Prüfmethoden validiert:</strong> Erfolgreich entwickelte und validierte robuste Prüfmethoden für komplexe medizinische Geräte</li>
+                <li><strong>Technische Standards etabliert:</strong> Erstellung von unternehmensweiten technischen Standards für Qualitätsprüfungen</li>
+                <li><strong>Produktzuverlässigkeit verbessert:</strong> Implementierte Qualitätsmaßnahmen führten zu einer höheren Produktzuverlässigkeit und reduziertem Ausschuss</li>
+                <li><strong>Dokumentation standardisiert:</strong> Entwicklung einer umfassenden technischen Dokumentation als Grundlage für zukünftige Qualitätssicherung</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" onclick="toggleAccordion(this)">
+            <span class="accordion-title">Tutor - "Blue Science" Modul</span>
+            <span class="accordion-period">04/2022 - heute (laufend)</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Institution:</strong> Hochschule Ruhr West, Fachbereich Mess- & Sensortechnik</p>
+              <p><strong>Aufgaben:</strong> Vermittlung von Inhalten aus dem interdisziplinären Modul "Blue Science", Unterstützung von Studierenden bei Lernprozessen, Durchführung von Übungsgruppen und Klausurvorbereitung</p>
+              <p><strong>Ergebnis:</strong> Erfolgreiche Unterstützung von über 20 Studierenden pro Semester mit positiven Evaluationen</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" onclick="toggleAccordion(this)">
+            <span class="accordion-title">Fachschaftsmitglied & Peer Mentor</span>
+            <span class="accordion-period">04/2022 - heute (laufend)</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Institution:</strong> Hochschule Ruhr West, Fachbereich Mess- & Sensortechnik</p>
+              <p><strong>Aufgaben:</strong></p>
+              <ul>
+                <li>Organisation von Fachschaftsveranstaltungen und Studierendenaktivitäten</li>
+                <li>Mentoring und Unterstützung von Erstsemstern</li>
+                <li>Vertretung von Studierendeninteressen</li>
+                <li>Durchführung von Informationsveranstaltungen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" onclick="toggleAccordion(this)">
+            <span class="accordion-title">COIL Project 2024 - Internationale Zusammenarbeit</span>
+            <span class="accordion-period">August 2024</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Event:</strong> Transatlantic Summer School on Sustainability</p>
+              <p><strong>Ort:</strong> Iowa, USA</p>
+              <p><strong>Aufgaben:</strong></p>
+              <ul>
+                <li>Teilnahme an international kooperativem Online-Lernprojekt (COIL)</li>
+                <li>Zusammenarbeit mit Studierenden und Fachleuten aus verschiedenen Ländern</li>
+                <li>Entwicklung von Lösungskonzepten für Nachhaltigkeitsprobleme</li>
+                <li>Präsentation und Diskussion internationaler Perspektiven</li>
+              </ul>
+              <p><strong>Ergebnis:</strong> Erweiterung interkultureller Kompetenzen und Netzwerkaufbau mit internationalen Fachleuten</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technologien -->
+    <section id="skills" class="skills-section">
+      <p class="eyebrow">Was ich kann</p>
+      <h2>Technische Fähigkeiten & Werkzeuge</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>🖥️ Software & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SAP (DED/DEA)</span>
+            <span class="skill-tag">Power Automate</span>
+            <span class="skill-tag">MS Office (Excel, Word, PowerPoint)</span>
+            <span class="skill-tag">LTspice</span>
+            <span class="skill-tag">BeamXpert</span>
+            <span class="skill-tag">Arduino IDE</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🔧 Design & Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Fusion 360</span>
+            <span class="skill-tag">CAD-Modellierung</span>
+            <span class="skill-tag">Produktdesign</span>
+            <span class="skill-tag">Technische Zeichnungen</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>⚙️ Technische Kompetenzen</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Qualitätsmanagement</span>
+            <span class="skill-tag">MDR 2017/745</span>
+            <span class="skill-tag">ISO 13485</span>
+            <span class="skill-tag">Prozessoptimierung</span>
+            <span class="skill-tag">Elektronik & Mikrocontroller</span>
+            <span class="skill-tag">Medizintechnologie</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🌍 Sprachen</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">🇩🇪 Deutsch (Muttersprache)</span>
+            <span class="skill-tag">🇹🇦 Tamil (Muttersprache)</span>
+            <span class="skill-tag">🇬🇧 English (Fließend)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>👥 Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Teamfähigkeit</span>
+            <span class="skill-tag">Flexibilität</span>
+            <span class="skill-tag">Selbstständiges Arbeiten</span>
+            <span class="skill-tag">Interkulturelle Zusammenarbeit</span>
+            <span class="skill-tag">Kommunikationsfähigkeit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact-section">
+      <p class="eyebrow">Lassen Sie uns in Kontakt treten</p>
+      <h2>Kontaktieren Sie mich</h2>
+      <p>Ich freue mich, von dir zu hören! Ob du Fragen zu meiner Erfahrung hast oder interessiert bist an einer Zusammenarbeit.</p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <p>Email</p>
+            <a href="mailto:vinuyan.m@gmx.de">vinuyan.m@gmx.de</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <div>
+            <p>Telefon</p>
+            <a href="tel:+4917675867014">+49 176 75867014</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <p>Adresse</p>
+            <p>In d. Breite 15, 73433 Aalen</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🔗</span>
+          <div>
+            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com/in/vinuyanmaheswaran/" target="_blank">linkedin.com/in/vinuyanmaheswaran</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vinuyan Maheswaran. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.accordion-icon');
+      const item = button.parentElement;
+      
+      // Toggle display
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        icon.textContent = '+';
+        item.classList.remove('expanded');
+      } else {
+        content.style.display = 'block';
+        icon.textContent = '−';
+        item.classList.add('expanded');
+      }
+    }
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
